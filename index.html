@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <title>Algo Journey</title>
+</head>
+<body>
+    <div id="menu-div">
+        <h1 id="menu-title">An Algorithmic Journey</h1>
+        <button id="menu-button">+</button>
+    </div>
+
+        <div id="articles">
+            <section id="problem-1">
+                <h2 id="problem-1--title" class="article-title">#Problem 1: what is this journey about?</h2>
+                <p id="problem-1--paragraph" class="article-p">
+                    Today is the first day of a journey I wanted to share. </br>
+                    It is going to be a tough one I think, and to help me get through it, I thought it was worth documenting it.</br>
+                    I have just finished a 6-months remote bootcamp, specialising in React and ending on a month-long group project. </br>
+                    Everything has been going great, I’ve learned a lot, BUT - I do not master algorithmia at all. </br>
+                    My logic is one of someone with a literary background - not to demean anyone but you know what I mean. </br>
+                    Reading philosophy has brought me some structure I guess. </br>
+                    But I want to train and get better at solving problems. </br>
+                    I have in my posession “Cracking the Coding Interview” by Gayle Laakmann, which I hope to rely on a lot during this journey. </br>
+                    So, whether you’re in the same case as I am, or you’re just curious, or lost, welcome. </br>
+                </p>
+            </section>
+            <section id="problem-2">
+                <h2 id="problem-2--title" class="article-title">#Problem 2: tell me about Big O and runtime</h2>
+                <p id="problem-2--paragraph" class="article-p" >
+                    Starting reading Gayle’s book and feeling a sense of discouragement as my brain is slowly turning into liquid. </br>
+                    Maybe the fact that I’m reading in English - not my mother tongue - isn’t helping? </br>
+                    Or the fact that she’s mentioning Google and Amazon interviewing processes and that, uh, I don’t have such goals? </br>
+                    I then decide to dig into the basic concepts of algorithmia by watching some french youtube videos and find out <a target="_blank" href="https://www.youtube.com/watch?v=pSJhyUiI9kE">this great guy</a>. </br>
+                    I understand that : space and time are core concepts in finding the best possible way to find a solution to a problem. </br>
+                    In coding, we measure the performance of our code by counting the number of operations running in our programme. O(n). </br>
+
+                </p>
+            </section>
+            <section id="problem-3">
+                <h2 id="problem-3--title" class="article-title">#Problem 3: how can I sort things out?</h2>
+                <p id="problem-3--paragraph" class="article-p" >
+                    Let’s imagine I have a list of numbers I want to reorganise in an ascending order. </br>
+                    What would be the best way to do that? </br>
+                    Here is what I gathered from <a href="https://www.youtube.com/watch?v=FIwcgikJWUc&t=2s" target="_blank">this video</a>. </br>
+                    Bubble sort : this solution would be to evaluate two numbers every time and compare them to each other. </br>
+                    I compare the first pair of numbers and I only keep the smallest one. The program ends when there is no more switching. </br>
+                    Even someone who doesn’t have a great logic would get that, even though it’s probably tidy, this solution is not the most efficient.</br>
+                    Merge sort: Let’s split the list into two segments of equal size. </br>
+                    The beauty of this (yes, I am starting to see beauty in this) is that I’m going to call that same function that split the list again, until I am left with lists of one item. </br>
+                    At this point, I can merge the two halves to get my ordered list. </br>
+                    This type of algo apparently belongs to the “divide and conquer” category. Now if we’re talking politics, I’m going to take a strong stance by stating I disagree with the morality behind that slogan. </br>
+                    Now politics aside - recursion is amazing.
+                </p>
+            </section>
+            <section id="problem-4">
+                <h2 id="problem-4--title" class="article-title">#Problem 4: how  do I stay focused?</h2>
+                <p id="problem-4--paragraph" class="article-p" >
+                    Every problem involves multiple ways to approach it. My immediate problem, after Problem 3, has been focus. </br>
+                    I watched this video which I thought was useful but then started wondering, should I not follow a more rigorous path on my journey? </br>
+                    Should I remain careful not to end up watching 100 videos of robots playing with balls? It was time to say hi to Gayle again. </br>
+                    And she provided me with an answer!</br>
+                    So according to her, the absolute knowledge required for anyone willing to master algorithms can be summed up in that list: </br>
+                    <strong>breadth-first search, depth-first search, binary search, merge sort, quick sort.</strong>
+                    But before diving into that list, she specifically asks the readers to also have a strong understanding of data structure, especially hash tables. </br>
+                    I will not immediately document the research I have been doing on hash tables to focus first on the different core algorithms.
+                </p>
+            </section>
+            <section id="problem-5">
+                <h2 id="problem-5--title" class="article-title">#Problem 5: what is Breadth-first search?</h2>
+                <p id="problem-5--paragraph" class="article-p" >
+                    I must admit the name scared me. But after doing some research in French, I got less scared. </br>
+                    Dare I say that for once, the French name is more eloquent and straightforward than the English one? </br>
+                    Anyway. From what I gathered, you need to think of this algorithm like you think of Google Maps: </br>
+                     what is the shortest distance that will lead me from one point to another? </br>
+                    So let’s say we have a network represented by nodes, and each node is linked to another by a straight line that represents a distance. </br>
+                    We have a source node and a destination node. So how do we do this? </br>
+                    Well, we’ll first have a look at all the nodes directly linked to our source node. </br>
+                    Then we’ll pick the one that has the smallest distance. We repeat the same thing but this time, we exclude the node/nodes that have already been evaluated. </br>
+                    And that’s it! 
+                </p>
+            </section>
+            <section id="problem-6">
+                <h2 id="problem-6--title" class="article-title">#Problem 6: what is depth-first search?</h2>
+                <p id="problem-6--paragraph" class="article-p" >
+                    Repeat the same setting as the previous problem. </br>
+                    Instead of jumping from one node to another by evaluating all the neighbour nodes, the goal is to go the furthest away - where there is higher depth in the tree. </br>
+                     Each time you go through a node, you cross it off your list. </br>
+                     If at some point in the journey you get stuck, you go back one step and try to find a node you haven’t traversed (is that even English?). </br>
+                     And if it doesn’t work - well, go back one step again. </br>
+                     Be mindful though because you might create an infinite loop. </br>
+                     I may only have a 6 months development experience - I know how those can be horrible. Last month, I used a React hook in a place I shouldn't have (*activate guilt*) and created an infinite call to an API. I felt really guilty towards my browser and wondered if it was at all possible for me to find it deceased the next morning (gladly, it survived or rather, resurrected).
+                </p>
+            </section>
+            <section id="problem-7">
+                <h2 id="problem-7--title" class="article-title">#Problem 7: binary search</h2>
+                <p id="problem-7--paragraph" class="article-p" >
+                    I stumbled on <a href="https://www.youtube.com/watch?v=P3YID7liBug" target="_blank">this video </a>
+                    that is coincidentally narrated by Gayle. </br>
+                    I notice I call her Gayle as if she were a close friend - another consequence of lockdown that had previously led me to talk about Adriene from Yoga With Adriene as if we were BFFs (I do spend an hour of my day with her).</br>
+                    So, binary search. </br>
+                    Let’s say we have an ordered list of items and we want to find one specific item within that list. </br>
+                    We could go through each item of the list until we find the right one - that would be a linear approach, but that’s not ideal. </br>
+                    So instead, we’ll split the list into two, and see whether the item we’re looking for is located on the left side of the half, or on the right. 
+                    And we repeat, until we narrow it down. Voilà. </br>                   
+                </p>
+            </section>
+            <section id="problem-8">
+                <h2 id="problem-8--title" class="article-title">#Problem 8: quick sort</h2>
+                <p id="problem-8--paragraph" class="article-p" >
+                    We want to sort an array. </br>
+                     We’ll pick a pivot which is an item in the middle of our array, and start performing operations: </br>
+                     we want items to the pivot’s left to be smaller, and items to the pivot’s right to be larger. </br>
+                     How do we do this: we put the pivot at the end of the array, to get it out. </br>
+                    We’ll pick two items on each iteration. One that will be the first item starting from the left that is larger than the pivot, and one that will be the first item starting from the right smaller than the pivot. </br> 
+                    And we swap, and repeat, and swap. </br>
+                    When we can’t swap anymore, we take care of each side of the pivot to sort items out again...by calling the same function. </br>
+                    Recursion - again.
+                </p>
+            </section>
+            <section id="problem-9">
+                <h2 id="problem-9--title" class="article-title">#Problem 9: can I make algo jokes now?</h2>
+                <p id="problem-9--paragraph" class="article-p" >
+                    I should have started with this : <a href="https://www.youtube.com/watch?v=RGuJga2Gl_k" target="_blank">Tom Scott</a> makes brilliant videos about algorithms and manages to make things simple. </br>
+                    I would definitely recommend watching. I realised that as for every subject, there is a culture behind it madeof jokes I feel proud of for understanding after watching the video. </br>
+                    A person called hang kikuta wrote <strong>“I usually clean my room with bogosort</strong> </br>
+                    and another person called Klappspaten said <strong>“I recently read a paper on a new linear sorting algorithm: </br>
+                    It's called Stalin-Sort. It achieves this by simply eliminating any element that isn't in order.”</strong> </br>
+                    Am I now part of something new??
+                </p>
+            </section>
+            <section id="problem-10">
+                <h2 id="problem-10--title" class="article-title">#Problem 10: can I sum up my problem in a flowchart?</h2>
+                <p id="problem-10--paragraph" class="article-p" >
+                    Not only can I, but it’s required! </br>
+                  <em>Step 1</em>: Listen to the problem. Pay attention to all the details. </br>
+                  <em> Step 2</em>: Example. Debug your example and ask yourself ‘is it big enough?’ (most of the time examples are too small), ‘is there any way it’s a special case?’. Try to make a drawing of your example. </br>
+                  <em> Step 3</em>: Brute force. Come up with one ASAP. State a naive algorithm and optimize from there. But don’t code just yet! </br>
+                 <em>Step 4</em>: Optimize. </br>
+                <em>Step 5</em>: Walk through. Make sure you understand every detail before you start coding. </br>
+                <em>Step 6</em>: Implement. Modularize. Refactor. Error check. Good variable names. </br>
+                <em> Step 7</em>: Test. </br>
+                </p>
+            </section>
+            <section id="problem-11">
+                <h2 id="problem-11--title" class="article-title">#Problem 11: manipulating strings</h2>
+                <p id="problem-11--paragraph" class="article-p" >
+                Following Gayle’s book, I started to read the “Interview Questions” part. Pages full of problems - I must say it doesn’t feel very comforting. </br>
+                I focused on the “URLify” challenge: write a function that, given a string, replaces all spaces with the characters ‘%20’.</br>
+                Naively - very naively - I thought I had picked a fairly easy one. </br>
+                I had the flowchart beside me, but it didn’t feel particularly useful. Why? </br>
+                I don’t know how to organise my ideas efficiently in this process. </br>
+                I don’t have enough knowledge in the language I’m trying to solve this in. Or rather, I have big gaps in my knowledge of what a programming language can do. </br>
+                Therefore, this is even more useful than I thought it would be. </br>
+                So after trying to solve that problem for some  -way too-long- time, I found this resolution that I copied in a fiddle and tried to comment. </br>
+                There are two scans in this approach: the first one determines the amount of spaces the “urlified” string will need to have, and the second will edit the string so as to either add the ‘%20’ or just copy the current letter. </br>
+                </p>
+            </section>
+
+        </div>
+
+    <div id="menu-fly">
+        <a href="#problem-1" class="menu-link">what this is about</a>
+        <a href="#problem-2" class="menu-link">tell me about Big O and runtime</a>
+        <a href="#problem-3" class="menu-link">how can I sort things out?</a>
+        <a href="#problem-4" class="menu-link">how do I stay focused?</a>
+        <a href="#problem-5" class="menu-link">what is breadth-first search?</a>
+        <a href="#problem-6" class="menu-link">what is depth-first search?</a>
+        <a href="#problem-7" class="menu-link">binary search?</a>
+        <a href="#problem-8" class="menu-link">quick sort?</a>
+        <a href="#problem-9" class="menu-link">can I make algo jokes?</a>
+        <a href="#problem-10" class="menu-link"> can I sum up my problem in a flowchart?</a>
+        <a href="#problem-11" class="menu-link">Manipulating strings</a>
+        <a href="#problem-12" class="menu-link"></a>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

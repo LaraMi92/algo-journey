@@ -1,0 +1,134 @@
+/*BODY*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20vh;
+}
+
+body {
+    background-color: #D3D3D3;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    overflow: auto;
+}
+
+strong {
+    font-weight: 400;
+}
+
+em {
+    font-style: italic;
+}
+
+/*MENU*/
+
+#menu-div {
+    position: sticky;
+    top: 0;
+    height: 20vh;
+    background-color: #FFE600;
+}
+
+#menu-title {
+    text-align: left;
+    padding: .5rem 0 0 .5rem;
+    font-size: 1.5rem;
+}
+
+#menu-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  max-width: 100%;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color:#0c3aa0;
+  background-color: #FFE600;
+  overflow: hidden;
+  transition: .6s ease-out;
+}
+
+#menu-button:hover {
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#menu-fly {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFE600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, -100vh, 0);
+    /* transition: transform .3s cubic-bezier(0, .52, 0, 1); */
+    transition: transform .5s cubic-bezier(.17,.67,.83,.67);
+}
+
+#menu-fly.show {
+    transform: translate3d(0vw, 0, 0);
+    
+}
+
+#menu-fly.show > a {
+    display: block;
+    text-decoration: none;
+    padding: .6rem;
+    color: #000000;
+}
+
+#menu-fly.show > a:hover {
+   font-weight: 400;
+}
+
+
+/*SECTION*/
+
+#articles > section {
+    min-height: 80vh; 
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+/*ARTICLE*/
+
+.article-title {
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.article-p{
+    padding: 1rem;
+    line-height: 1.8rem;
+}
+
+
+#problem-2,#problem-5, #problem-9{
+    background-color: #FFE600;
+}
+
+#problem-3, #problem-7, #problem-11{
+    background: rgb(211,211,211);
+    background: linear-gradient(180deg, rgba(211,211,211,1) 59%, rgba(255,230,0,1) 100%);
+}
+
+#problem-4, #problem-8, #problem-12 {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(211,211,211,1) 58%);
+}
+
+
+#problem-6, #problem-10 {
+    background-color: #d3d3d3;  
+}
+
