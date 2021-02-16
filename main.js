@@ -1,6 +1,7 @@
 
 let menuButton = document.querySelector("#menu-button");
 let menuFly = document.querySelector("#menu-fly");
+let closeMenuBtn = document.querySelector('.close-menu');
 
 const showMenu = () => {
     menuFly.classList.add("show");
@@ -14,23 +15,4 @@ const hideMenu = () => {
 
 menuButton.addEventListener("click", showMenu, false);
 menuFly.addEventListener("click", hideMenu, false);
-
-
-/*  function getOffsetTop(element) {
-        let offsetTop = 0;
-    while(element) {
-      offsetTop += element.offsetTop;
-      element = element.offsetParent;
-    }
-    return  scroll({
-            top: offsetTop,
-            behavior: 'smooth'
-        });
-    };
-
-
-const menuLinks = document.querySelectorAll(".menu-link");
-
-for(const menuLink of menuLinks){
-    menuLink.addEventListener("click", getOffsetTop);
-} */
+closeMenuBtn.addEventListener("click", hideMenu, false);

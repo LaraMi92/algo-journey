@@ -40,13 +40,14 @@ em {
     font-size: 1.5rem;
 }
 
-#menu-button {
+#menu-button, .close-menu {
   position: absolute;
   right: 0;
   top: 0;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  font-size: large;
+  /* height: 30px; */
   max-width: 100%;
   text-decoration: none;
   border: none;
@@ -57,13 +58,14 @@ em {
   transition: .6s ease-out;
 }
 
-#menu-button:hover {
-    font-size: large;
+#menu-button:hover, .close-menu:hover {
     font-weight: 900;
     cursor: pointer;
 }
 
 #menu-fly {
+    display: flex;
+    flex-flow: column wrap;
     width: 100vw;
     height: 100vh;
     background-color: #FFE600;
@@ -71,13 +73,11 @@ em {
     top: 0;
     left: 0;
     transform: translate3d(0, -100vh, 0);
-    /* transition: transform .3s cubic-bezier(0, .52, 0, 1); */
     transition: transform .5s cubic-bezier(.17,.67,.83,.67);
 }
 
 #menu-fly.show {
     transform: translate3d(0vw, 0, 0);
-    
 }
 
 #menu-fly.show > a {
@@ -90,6 +90,8 @@ em {
 #menu-fly.show > a:hover {
    font-weight: 400;
 }
+
+
 
 
 /*SECTION*/
@@ -134,7 +136,7 @@ em {
     background-color: #FFE600;
 }
 
-#problem-12 {
+#problem-11, #problem-12, #problem-13 {
     background-color:#1F2227;
     color: #D3D3D3;
 }
@@ -147,11 +149,6 @@ em {
 #problem-4, #problem-8 {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(211,211,211,1) 58%);
-}
-
-#problem-11 {
-    background: rgb(211,211,211);
-    background: linear-gradient(180deg, rgba(211,211,211,1) 0%, rgba(31,34,39,1) 5%);
 }
 
 #problem-6, #problem-10 {
