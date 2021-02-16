@@ -107,26 +107,52 @@ em {
     padding: 1rem;
 }
 
-.article-p{
+.article-p {
     padding: 1rem;
     line-height: 1.8rem;
 }
 
+.p--font, #problem-11--title {
+    color: #d3d3d3;
+}
+
+.article-picture {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    height: auto;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+.article-picture > * {
+    max-width: 100vw;
+    object-fit: contain;
+}
 
 #problem-2,#problem-5, #problem-9{
     background-color: #FFE600;
 }
 
-#problem-3, #problem-7, #problem-11{
+#problem-12 {
+    background-color:#1F2227;
+    color: #D3D3D3;
+}
+
+#problem-3, #problem-7 {
     background: rgb(211,211,211);
     background: linear-gradient(180deg, rgba(211,211,211,1) 59%, rgba(255,230,0,1) 100%);
 }
 
-#problem-4, #problem-8, #problem-12 {
+#problem-4, #problem-8 {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(211,211,211,1) 58%);
 }
 
+#problem-11 {
+    background: rgb(211,211,211);
+    background: linear-gradient(180deg, rgba(211,211,211,1) 0%, rgba(31,34,39,1) 5%);
+}
 
 #problem-6, #problem-10 {
     background-color: #d3d3d3;  

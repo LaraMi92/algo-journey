@@ -149,7 +149,7 @@
             </section>
             <section id="problem-11">
                 <h2 id="problem-11--title" class="article-title">#Problem 11: manipulating strings</h2>
-                <p id="problem-11--paragraph" class="article-p" >
+                <p id="problem-11--paragraph" class="article-p p--font" >
                 Following Gayle’s book, I started to read the “Interview Questions” part. Pages full of problems - I must say it doesn’t feel very comforting. </br>
                 I focused on the “URLify” challenge: write a function that, given a string, replaces all spaces with the characters ‘%20’.</br>
                 Naively - very naively - I thought I had picked a fairly easy one. </br>
@@ -160,6 +160,45 @@
                 So after trying to solve that problem for some  -way too-long- time, I found this resolution that I copied in a fiddle and tried to comment. </br>
                 There are two scans in this approach: the first one determines the amount of spaces the “urlified” string will need to have, and the second will edit the string so as to either add the ‘%20’ or just copy the current letter. </br>
                 </p>
+                <div class="article-picture">
+                    <img src="assets/problem11/Capture d’écran (35).png" alt="algo_pb11_fiddle">
+                    <img src="assets/problem11/Capture d’écran (36).png"alt="algo_pb11_fiddle">
+                </div>
+                <p class="article-p p--font">
+                What I learnt from this problem:</br>
+                • to manipulate strings try to transform them into array</br>
+                • the split method in JS </br>
+                • a common approach in string manipulation is to start by the end and to work backwards 
+                </p>
+            </section>
+            <section id="problem-12">
+                <h2 id="problem-12--title" class="article-title">#Problem 12: a Like problem</h2>
+                <p id="problem-12--paragraph" class="article-p" >
+                    I randomly tried to go back on Codewars. </br>
+                    The first problem I got seemed fairly easy  - something a bit similar to fizzbuzz; so the question was, if it looks easy, then can I find a better way to implement it? </br>
+                    Following Gayle’s advice again, I tried to </br>
+
+                    • rewrite the problem to make sure I go through every case. What is the expected output? 
+                        <div class="article-picture">
+                            <img src="assets/problem12/Capture d’écran (47).png" alt="algo_pb12_fiddle">
+                        </div>    
+                    <p class="article-p">  • write a brute-force algorithm. Chained 'if/else'.Something super ugly, but something that works.</p>
+                        <div class="article-picture">
+                            <img src="assets/problem12/Capture d’écran (48).png" alt="algo_pb12_fiddle">
+                        </div>
+                    <p class="article-p"> • after the brute-force one has been tested, find a way to make it look more elegant. </br>
+                    Refactoring.</p>
+                        <div class="article-picture">
+                            <img src="assets/problem12/Capture d’écran (49).png" alt="algo_pb12_fiddle">
+                        </div>
+                    <p class="article-p">  • and eventually, using a switch case for more readability. </p>
+                        <div class="article-picture">
+                            <img src="assets/problem12/Capture d’écran (50).png" alt="algo_pb12_fiddle">
+                        </div>
+                    <p class="article-p">
+                    So after solving this, my confidence has improved.</br> 
+                    I feel like I’m on the right track, following that methodology.
+                    </p>
             </section>
 
         </div>
@@ -175,8 +214,8 @@
         <a href="#problem-8" class="menu-link">quick sort?</a>
         <a href="#problem-9" class="menu-link">can I make algo jokes?</a>
         <a href="#problem-10" class="menu-link"> can I sum up my problem in a flowchart?</a>
-        <a href="#problem-11" class="menu-link">Manipulating strings</a>
-        <a href="#problem-12" class="menu-link"></a>
+        <a href="#problem-11" class="menu-link">manipulating strings</a>
+        <a href="#problem-12" class="menu-link">a like problem</a>
     </div>
 </body>
 <script src="main.js"></script>
