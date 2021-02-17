@@ -6,7 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 20vh;
+    scroll-padding-top: 15vh;
 }
 
 body {
@@ -25,12 +25,17 @@ em {
     font-style: italic;
 }
 
+a {
+    text-decoration: none;
+    color: #0c3aa0;
+}
+
 /*MENU*/
 
 #menu-div {
     position: sticky;
     top: 0;
-    height: 20vh;
+    height: 15vh;
     background-color: #FFE600;
 }
 
@@ -46,20 +51,17 @@ em {
   top: 0;
   display: block;
   width: 50px;
-  font-size: large;
-  /* height: 30px; */
+  font-size: 2em;
   max-width: 100%;
   text-decoration: none;
   border: none;
   outline: none;
-  color:#0c3aa0;
   background-color: #FFE600;
   overflow: hidden;
-  transition: .6s ease-out;
 }
 
 #menu-button:hover, .close-menu:hover {
-    font-weight: 900;
+    color:#0c3aa0; 
     cursor: pointer;
 }
 
@@ -91,13 +93,20 @@ em {
    font-weight: 400;
 }
 
+.github-icon {
+    display: inline-block;
+    max-width: 35px;
+    margin: .4rem;
+}
 
-
+.github-icon:hover {
+    opacity: .5;
+}
 
 /*SECTION*/
 
 #articles > section {
-    min-height: 80vh; 
+    min-height: 85vh; 
     padding: .5rem;
     font-size: 1.5rem;
 }
