@@ -94,8 +94,9 @@ a {
 }
 
 .github-icon {
+    position: absolute;
     display: inline-block;
-    max-width: 35px;
+    max-width: 1.5rem;
     margin: .4rem;
 }
 
@@ -164,3 +165,7 @@ a {
     background-color: #d3d3d3;  
 }
 
+#codewars-logo {
+    width: 10vw;
+    height: auto;
+}
